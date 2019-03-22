@@ -1,0 +1,725 @@
+.wrap, body main #pitch #keyboard, body.internal main section {
+  margin: 0px; }
+  @media screen and (min-width: 780px) {
+    .wrap, body main #pitch #keyboard, body.internal main section {
+      max-width: 750px;
+      margin: 0px auto; } }
+
+body.internal main section ul.columns:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  -webkit-text-size-adjust: 100%;
+  color: #000;
+  background: #FFF;
+  font-family: verdana, sans-serif;
+  font-weight: normal;
+  line-height: 1.2em;
+  font-size: 15px; }
+  @media screen and (min-width: 780px) {
+    html, body {
+      font-size: 22.5px; } }
+  html .drones, body .drones {
+    text-transform: uppercase;
+    font-size: 80%; }
+  html .highlight, body .highlight {
+    color: #F47B51; }
+  html img.photoright, body img.photoright {
+    display: block;
+    margin: 0px auto; }
+    @media screen and (min-width: 780px) {
+      html img.photoright, body img.photoright {
+        float: right;
+        margin: 0px 0px 1em 1em; } }
+  html p, body p {
+    margin: 0px 0px .5em 0px; }
+    html p:last-child, body p:last-child {
+      margin-bottom: 0px; }
+  html a:link, html a:visited, body a:link, body a:visited {
+    color: #F47B51;
+    text-decoration: underline; }
+  html a:hover, body a:hover {
+    text-decoration: none; }
+  html a:active, body a:active {
+    text-decoration: underline; }
+  html a.button, body a.button {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7b3a21+0,f47a51+100 */
+    background: #a2310a;
+    /* Old browsers */
+    background: -webkit-linear-gradient(top, #a2310a 0%, #F47B51 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #a2310a 0%, #F47B51 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    color: #FFF;
+    text-shadow: 0px 0px 15px #421404;
+    font-size: 15px;
+    display: inline-block;
+    margin: 15px; }
+    html a.button:hover, body a.button:hover {
+      background: #F47B51; }
+    html a.button:link, html a.button:visited, html a.button:active, body a.button:link, body a.button:visited, body a.button:active {
+      text-decoration: none; }
+
+a img, a img:focus, a img:hover, a img:active, button, button:focus, button:hover, button:active {
+  border: none; }
+
+body {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  text-align: center; }
+  body #message {
+    background: #F47B51;
+    color: #FFF;
+    font-size: 11.25px;
+    padding: 7.5px 0px;
+    margin: 0px -15px;
+    text-shadow: 0px 0px 15px #421404; }
+    body #message span {
+      display: none; }
+    @media screen and (min-width: 780px) {
+      body #message {
+        font-size: 11.25px; }
+        body #message span {
+          display: inline; } }
+    body #message a:link, body #message a:visited, body #message a:hover, body #message a:active {
+      color: #FFF; }
+  body #config {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #cccccc;
+    margin: 0px;
+    padding-left: 10%;
+    box-sizing: border-box; }
+    @media screen and (min-width: 780px) {
+      body #config {
+        top: 8%;
+        left: 25%;
+        height: 84%;
+        width: 50%;
+        overflow-y: auto;
+        border-radius: 15px;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+        padding: 0px 0px 30px 0px; } }
+    body #config h3 {
+      font-weight: normal;
+      font-size: 18.75px;
+      width: 90vw;
+      margin: 1ex 0px; }
+      @media screen and (min-width: 780px) {
+        body #config h3 {
+          font-size: 28.125px;
+          width: 100%; } }
+    body #config ul {
+      margin: 0px;
+      padding: 0px; }
+      body #config ul li {
+        list-style-type: none;
+        margin: 0px;
+        padding: 11.25px 30px;
+        background: #FFF;
+        border-bottom: 1px solid #000;
+        text-align: left; }
+        body #config ul li:hover {
+          background: #e6e6e6;
+          cursor: pointer; }
+        body #config ul li:first-child {
+          border-top: 1px solid #000; }
+        @media screen and (min-width: 780px) {
+          body #config ul li {
+            font-size: 90%; } }
+    body #config form {
+      background: #FFF;
+      padding: 30px; }
+      body #config form label {
+        font-size: 15px;
+        width: 38ex !important;
+        text-align: left !important;
+        display: block !important; }
+        @media screen and (min-width: 780px) {
+          body #config form label {
+            margin: 0px auto !important; } }
+  body main {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    transition: left .5s;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7b3a21+0,f47a51+100 */
+    background: #a2310a;
+    /* Old browsers */
+    background: -webkit-linear-gradient(top, #a2310a 60%, #F47B51 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #a2310a 60%, #F47B51 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+    @media screen and (min-width: 780px) {
+      body main {
+        background: #b3b3b3;
+        box-shadow: none; } }
+    body main header {
+      background: #000;
+      color: #FFF; }
+      body main header h1 {
+        margin: 0px;
+        font-weight: normal;
+        text-align: center;
+        padding: 7.5px 0px 7.5px 0px;
+        font-size: 22.5px;
+        line-height: 1.2em; }
+        @media screen and (min-width: 780px) {
+          body main header h1 {
+            font-size: 45px;
+            padding-top: 45px;
+            padding-bottom: 15px; } }
+        body main header h1 .drones {
+          color: #F47B51; }
+        body main header h1 img {
+          height: 1.2em;
+          width: 1.2em;
+          margin-top: -.1em;
+          vertical-align: middle; }
+          @media screen and (min-width: 780px) {
+            body main header h1 img {
+              height: 1.5em;
+              width: 1.5em; } }
+        body main header h1 a:link, body main header h1 a:visited, body main header h1 a:hover, body main header h1 a:active {
+          text-decoration: none;
+          color: #FFF; }
+    body main #settings {
+      margin: 0px;
+      padding: 0px;
+      background: #000;
+      overflow: hidden;
+      text-align: center;
+      font-size: 0px; }
+      body main #settings li {
+        text-align: left;
+        margin: 0px;
+        padding: 7.5px 15px;
+        list-style-type: none;
+        border-bottom: 1px solid #000;
+        background: #FFF;
+        cursor: pointer; }
+        body main #settings li strong {
+          font-size: 15.75px; }
+        body main #settings li small {
+          font-size: 11.25px; }
+        body main #settings li strong, body main #settings li small {
+          display: block;
+          font-weight: normal;
+          line-height: 1.2em; }
+        body main #settings li:before {
+          float: right;
+          content: "\203A";
+          font-size: 200%;
+          margin-top: 5px;
+          color: gray;
+          font-size: 30px; }
+        body main #settings li:hover {
+          background: #e6e6e6; }
+        @media screen and (min-width: 780px) {
+          body main #settings li {
+            border: none;
+            padding: 15px;
+            border-radius: 15px;
+            color: #FFF;
+            text-shadow: 0px 0px 15px #421404;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7b3a21+0,f47a51+100 */
+            background: #a2310a;
+            /* Old browsers */
+            background: -webkit-linear-gradient(top, #a2310a 0%, #F47B51 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #a2310a 0%, #F47B51 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+            body main #settings li:hover {
+              background: #F47B51; } }
+        @media screen and (min-width: 780px) {
+          body main #settings li {
+            text-align: center;
+            box-sizing: border-box;
+            width: 225px;
+            margin-right: 37.5px;
+            display: inline-block;
+            margin-top: 30px;
+            margin-bottom: 120px; }
+            body main #settings li strong {
+              font-size: 22.5px;
+              line-height: 1.2em; }
+            body main #settings li small {
+              margin-top: 3.75px;
+              font-size: 13.5px; }
+            body main #settings li:last-child {
+              margin-right: 0px; }
+            body main #settings li:before {
+              display: none; } }
+    body main #pitch {
+      padding-top: 15px;
+      background: #722307; }
+      @media screen and (min-width: 780px) {
+        body main #pitch {
+          background: transparent;
+          -webkit-perspective: 140px;
+          -webkit-perspective-origin: 50% 50%;
+          perspective: 140px;
+          perspective-origin: 50% 50%; } }
+      body main #pitch #keyboard {
+        position: relative;
+        font-size: 0px;
+        padding: 0px;
+        white-space: nowrap;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+        height: 25vh; }
+        body main #pitch #keyboard li {
+          position: relative;
+          vertical-align: top;
+          box-sizing: border-box;
+          border: 1px solid #000;
+          width: 12.5%;
+          background: #FFF;
+          display: inline-block;
+          margin: 0px;
+          padding: 0px;
+          list-style-type: none;
+          z-index: 1;
+          height: 100%; }
+          body main #pitch #keyboard li#sol1, body main #pitch #keyboard li#le1, body main #pitch #keyboard li#la1, body main #pitch #keyboard li#te1, body main #pitch #keyboard li#ti1 {
+            display: none; }
+          body main #pitch #keyboard li#le1, body main #pitch #keyboard li#te1, body main #pitch #keyboard li#di, body main #pitch #keyboard li#me, body main #pitch #keyboard li#fi, body main #pitch #keyboard li#le, body main #pitch #keyboard li#te {
+            width: 8%;
+            z-index: 10;
+            height: 55%;
+            margin-left: -4%;
+            margin-right: -4%; }
+          body main #pitch #keyboard li.selected {
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7b3a21+0,f47a51+100 */
+            background: #a2310a;
+            /* Old browsers */
+            background: -webkit-linear-gradient(top, #a2310a 0%, #F47B51 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #a2310a 0%, #F47B51 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+          body main #pitch #keyboard li:not(.selected)#le1, body main #pitch #keyboard li:not(.selected)#te1, body main #pitch #keyboard li:not(.selected)#di, body main #pitch #keyboard li:not(.selected)#me, body main #pitch #keyboard li:not(.selected)#fi, body main #pitch #keyboard li:not(.selected)#le, body main #pitch #keyboard li:not(.selected)#te {
+            background: #000; }
+          @media screen and (min-width: 780px) {
+            body main #pitch #keyboard li:not(.selected):hover {
+              background: #F47B51 !important;
+              cursor: pointer; } }
+        @media screen and (min-width: 780px) {
+          body main #pitch #keyboard {
+            left: -11%;
+            top: -105px;
+            -webkit-transform-origin: 50% 50%;
+            -webkit-transform: rotateX(12deg) scale(1.1);
+            -webkit-transform-style: preserve-3d;
+            transform-origin: 50% 50%;
+            transform: rotateX(12deg) scale(1.1);
+            transform-style: preserve-3d; }
+            body main #pitch #keyboard li#sol1, body main #pitch #keyboard li#le1, body main #pitch #keyboard li#la1, body main #pitch #keyboard li#te1, body main #pitch #keyboard li#ti1 {
+              display: inline-block; } }
+    body main button#playpause {
+      border: none;
+      background: transparent;
+      margin-top: 15px;
+      position: relative;
+      cursor: pointer; }
+      @media screen and (min-width: 780px) {
+        body main button#playpause {
+          border: none;
+          padding: 15px;
+          border-radius: 15px;
+          color: #FFF;
+          text-shadow: 0px 0px 15px #421404;
+          /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7b3a21+0,f47a51+100 */
+          background: #a2310a;
+          /* Old browsers */
+          background: -webkit-linear-gradient(top, #a2310a 0%, #F47B51 100%);
+          /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to bottom, #a2310a 0%, #F47B51 100%);
+          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+          body main button#playpause:hover {
+            background: #F47B51; } }
+      @media screen and (min-width: 780px) {
+        body main button#playpause {
+          width: 750px;
+          padding: 30px;
+          margin-top: -45px;
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); }
+          body main button#playpause:after {
+            content: "Play";
+            display: inline;
+            padding-left: 30px;
+            color: #FFF;
+            font-size: 60px;
+            vertical-align: middle; }
+          body main button#playpause.playing:after {
+            content: "Stop"; } }
+      body main button#playpause #playIcon {
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        padding: 15px;
+        border: 10px solid #FFF;
+        border-radius: 50%;
+        text-align: center;
+        vertical-align: middle;
+        box-shadow: 0px 0px 15px rgba(66, 20, 4, 0.75);
+        margin-top: 15px;
+        margin-bottom: 15px; }
+        body main button#playpause #playIcon:after {
+          border-right: none;
+          border-top: 30px solid rgba(255, 255, 255, 0);
+          border-bottom: 30px solid rgba(255, 255, 255, 0);
+          border-left: 40px solid #FFF;
+          content: " ";
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 15px; }
+        @media screen and (min-width: 780px) {
+          body main button#playpause #playIcon {
+            margin: 0px; } }
+      body main button#playpause.playing #playIcon:after {
+        border: none;
+        width: 45px;
+        height: 45px;
+        background: #FFF;
+        margin-top: 7.5px;
+        margin-left: 0px; }
+    body main .mask {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      z-index: 200;
+      opacity: 0;
+      transition: opacity .5s; }
+  body footer {
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    text-align: center;
+    font-size: 0px;
+    padding-top: 7.5px;
+    z-index: 500; }
+    @media screen and (min-width: 780px) {
+      body footer {
+        background: rgba(0, 0, 0, 0.3); } }
+    body footer > div {
+      font-size: 11.25px;
+      box-sizing: border-box;
+      display: inline-block;
+      padding: 0px 15px;
+      text-align: right;
+      width: 50%;
+      color: #cccccc; }
+      body footer > div span {
+        display: none; }
+      body footer > div:first-child {
+        text-align: left; }
+      @media screen and (min-width: 780px) {
+        body footer > div {
+          padding: 0px;
+          width: 375px;
+          font-size: 11.25px; }
+          body footer > div span {
+            display: inline; } }
+      body footer > div a {
+        cursor: pointer; }
+        body footer > div a, body footer > div a:link, body footer > div a:visited {
+          color: #FFF;
+          text-decoration: none; }
+        body footer > div a:hover {
+          text-decoration: underline; }
+    body footer #login {
+      display: none;
+      position: fixed;
+      z-index: 400;
+      top: 40%;
+      left: 0px;
+      width: 80%;
+      margin: 0px 10%; }
+      body footer #login form {
+        padding: 15px;
+        background: #FFF;
+        border-radius: 15px;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+        margin-bottom: 15px; }
+        body footer #login form label {
+          position: absolute;
+          font-size: 11.25px;
+          padding: 7.5px;
+          color: #000; }
+          @media screen and (min-width: 780px) {
+            body footer #login form label {
+              padding: 3px 7.5px; } }
+          body footer #login form label[for="remember_me"] {
+            margin-left: 3ex;
+            line-height: 1em;
+            padding-top: .5ex; }
+            @media screen and (min-width: 780px) {
+              body footer #login form label[for="remember_me"] {
+                line-height: 2em; } }
+        body footer #login form input {
+          position: relative;
+          box-sizing: border-box;
+          width: 100%;
+          background: #FFF;
+          padding: 7.5px !important;
+          border-radius: 7.5px !important;
+          margin-bottom: 7.5px;
+          border: 1px solid #b3b3b3; }
+          body footer #login form input:invalid:not(:focus) {
+            background: rgba(255, 255, 255, 0.65); }
+          body footer #login form input[type="submit"] {
+            background: #000;
+            color: #FFF;
+            cursor: pointer;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7b3a21+0,f47a51+100 */
+            background: #a2310a;
+            /* Old browsers */
+            background: -webkit-linear-gradient(top, #a2310a 0%, #F47B51 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #a2310a 0%, #F47B51 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            font-size: 15px;
+            margin-bottom: 0px; }
+            @media screen and (min-width: 780px) {
+              body footer #login form input[type="submit"] {
+                border: none;
+                padding: 15px;
+                border-radius: 15px;
+                color: #FFF;
+                text-shadow: 0px 0px 15px #421404;
+                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7b3a21+0,f47a51+100 */
+                background: #a2310a;
+                /* Old browsers */
+                background: -webkit-linear-gradient(top, #a2310a 0%, #F47B51 100%);
+                /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom, #a2310a 0%, #F47B51 100%);
+                /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+                body footer #login form input[type="submit"]:hover {
+                  background: #F47B51; } }
+        @media screen and (min-width: 780px) {
+          body footer #login form {
+            width: 33%;
+            float: right; } }
+      @media screen and (min-width: 780px) {
+        body footer #login {
+          position: absolute;
+          width: 750px;
+          left: 50%;
+          top: auto;
+          bottom: 0px;
+          margin-left: -375px;
+          margin-right: 0px; } }
+
+body.internal header {
+  padding-bottom: 25%;
+  margin-bottom: -25%; }
+  @media screen and (min-width: 780px) {
+    body.internal header {
+      padding-bottom: 225px;
+      margin-bottom: -225px; } }
+body.internal main {
+  background: #b3b3b3;
+  overflow-y: auto; }
+  body.internal main section {
+    background: #FFF;
+    padding: 30px;
+    box-sizing: border-box;
+    position: static;
+    font-size: 15px;
+    line-height: 1.25em;
+    margin-bottom: 3em; }
+    @media screen and (min-width: 780px) {
+      body.internal main section {
+        font-size: 15px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+        margin-top: 15px;
+        position: relative; } }
+    body.internal main section h2 {
+      font-size: 150%;
+      font-weight: normal;
+      font-style: normal;
+      margin-top: 0px;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #000; }
+    body.internal main section ul.columns {
+      margin: 0px;
+      padding: 0px; }
+      body.internal main section ul.columns > li {
+        text-align: left;
+        margin: 0px 0px 1em 0px;
+        padding: 0px;
+        list-style-type: none; }
+      body.internal main section ul.columns.subnav {
+        background: #b3b3b3;
+        border-radius: 7.5px;
+        padding: 15px 0px; }
+        body.internal main section ul.columns.subnav li {
+          text-align: center;
+          margin-bottom: 0px; }
+          body.internal main section ul.columns.subnav li.selected {
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7b3a21+0,f47a51+100 */
+            background: #a2310a;
+            /* Old browsers */
+            background: -webkit-linear-gradient(top, #a2310a 0%, #F47B51 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #a2310a 0%, #F47B51 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            color: #FFF;
+            text-shadow: 0px 0px 15px #421404;
+            box-shadow: inset 0px 0px 7.5px rgba(0, 0, 0, 0.5); }
+          body.internal main section ul.columns.subnav li a:link, body.internal main section ul.columns.subnav li a:visited, body.internal main section ul.columns.subnav li a:hover, body.internal main section ul.columns.subnav li a:active {
+            color: #FFF;
+            text-decoration: none;
+            display: block;
+            padding: 15px; }
+          body.internal main section ul.columns.subnav li a:hover {
+            text-decoration: underline; }
+        @media screen and (min-width: 780px) {
+          body.internal main section ul.columns.subnav {
+            padding: 0px 15px; } }
+      @media screen and (min-width: 780px) {
+        body.internal main section ul.columns > li {
+          float: left;
+          box-sizing: border-box; }
+        body.internal main section ul.columns.half > li {
+          width: 50%; }
+        body.internal main section ul.columns.third > li {
+          width: 33%; }
+          body.internal main section ul.columns.third > li:last-child {
+            width: 34%; }
+        body.internal main section ul.columns.quarter > li {
+          width: 25%; } }
+    body.internal main section p {
+      margin: 15px 0px;
+      line-height: 1.3em; }
+    body.internal main section #accountStatus {
+      border: 1px solid #000;
+      border-radius: 15px;
+      padding: 0px 15px 15px 15px;
+      margin: 15px 0px; }
+      body.internal main section #accountStatus h3 {
+        background: #000;
+        color: #FFF;
+        margin: 0px -15px 15px -15px;
+        padding: 15px;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px; }
+        @media screen and (min-width: 780px) {
+          body.internal main section #accountStatus h3 {
+            font-size: 120%; } }
+      body.internal main section #accountStatus form {
+        margin: 15px;
+        text-align: center; }
+        body.internal main section #accountStatus form input {
+          width: auto;
+          border: none; }
+    body.internal main section table {
+      width: 100%; }
+      body.internal main section table th, body.internal main section table td {
+        text-align: left;
+        font-size: 11.25px; }
+        @media screen and (min-width: 780px) {
+          body.internal main section table th, body.internal main section table td {
+            font-size: 15px; } }
+    body.internal main section .subsection {
+      display: none;
+      text-align: left; }
+      body.internal main section .subsection h3 {
+        font-size: 150%;
+        font-weight: normal;
+        font-style: normal;
+        margin-top: 0px;
+        margin: 15px 0px; }
+body.internal section form, body.internal #config form {
+  text-align: left; }
+  @media screen and (min-width: 780px) {
+    body.internal section form, body.internal #config form {
+      text-align: center; } }
+  body.internal section form label, body.internal #config form label {
+    width: 100%;
+    margin-right: 2ex;
+    display: block; }
+    @media screen and (min-width: 780px) {
+      body.internal section form label, body.internal #config form label {
+        width: 18ex;
+        display: inline-block;
+        text-align: right;
+        vertical-align: top;
+        margin-top: 1ex; } }
+  body.internal section form input, body.internal section form textarea, body.internal #config form input, body.internal #config form textarea {
+    width: 100%;
+    padding: 7.5px;
+    font-size: 15px;
+    border: 1px solid #b3b3b3;
+    border-radius: 7.5px;
+    box-sizing: border-box; }
+    body.internal section form input[type="submit"], body.internal section form textarea[type="submit"], body.internal #config form input[type="submit"], body.internal #config form textarea[type="submit"] {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7b3a21+0,f47a51+100 */
+      background: #a2310a;
+      /* Old browsers */
+      background: -webkit-linear-gradient(top, #a2310a 0%, #F47B51 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #a2310a 0%, #F47B51 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      border: none;
+      padding: 15px;
+      border-radius: 15px;
+      color: #FFF;
+      text-shadow: 0px 0px 15px #421404;
+      font-size: 15px; }
+      body.internal section form input[type="submit"]:hover, body.internal section form textarea[type="submit"]:hover, body.internal #config form input[type="submit"]:hover, body.internal #config form textarea[type="submit"]:hover {
+        background: #F47B51; }
+    @media screen and (min-width: 780px) {
+      body.internal section form input, body.internal section form textarea, body.internal #config form input, body.internal #config form textarea {
+        width: 40ex; } }
+    body.internal section form input.invalid, body.internal section form input:invalid, body.internal section form textarea.invalid, body.internal section form textarea:invalid, body.internal #config form input.invalid, body.internal #config form input:invalid, body.internal #config form textarea.invalid, body.internal #config form textarea:invalid {
+      border: 1px solid #F47B51; }
+  body.internal section form textarea, body.internal #config form textarea {
+    height: 10em; }
+body.internal section #configForms select, body.internal section #configForms textarea, body.internal #config #configForms select, body.internal #config #configForms textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1ex; }
+body.internal section #configForms textarea, body.internal #config #configForms textarea {
+  height: 5em; }
+body.internal section #configForms form, body.internal #config #configForms form {
+  margin: 15px 0px;
+  padding: 15px;
+  border-radius: 15px;
+  background: #cccccc; }
+body.internal section #promo, body.internal #config #promo {
+  margin: 15px 0px;
+  padding: 15px;
+  border-radius: 15px;
+  background: #cccccc; }
+body.internal footer {
+  background: rgba(0, 0, 0, 0.3); }
+
+/*# sourceMappingURL=tuningdrones.css.map */

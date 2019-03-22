@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="shortcut icon" href="/assets/favicon.png" type="image/png" />
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./assets/tuningdrones_icon_57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/tuningdrones_icon_72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/tuningdrones_icon_114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/tuningdrones_icon_144.png" />
+	<link rel="stylesheet" type="text/css" href="./inc/tuningdrones.css" />
+	<script type="text/javascript" src="./inc/config.json"></script>
+	<script type="text/javascript" src="./inc/tuningdrones.js"></script>
+	<script type="text/javascript" src="./inc/audio.js"></script>
+	<meta name="description" content="Customizeable drone pitches for intonation practice." />
+    <!-- <meta property="og:image" content="http://www.tuningdrones.com/assets/preview.png" /> -->
+    <!-- <meta property="og:url" content="http://www.tuningdrones.com/" /> -->
+    <!-- <meta property="og:title" content="tuningDRONES" /> -->
+</head>
+<body>
+	<aside id="config">
+		<h3></h3>
+		<ul></ul>
+	</aside>
+	<main>
+		<ul id="settings">
+			<li data-list="instruments">
+				<strong>Instrument</strong>
+				<small>Select...</small>
+			</li>
+			<li data-list="drones">
+				<strong>Drone Type</strong>
+				<small>Select...</small>
+			</li>
+			<li data-list="transpositions">
+				<strong>Transposition</strong>
+				<small>Select...</small>
+			</li>
+		</ul>
+		<div id="pitch">
+			<ul id="keyboard">
+				<li id="sol1" data-freq="-14"></li>
+				<li id="le1" data-freq="-13"></li>
+				<li id="la1" data-freq="-12"></li>
+				<li id="te1" data-freq="-11"></li>
+				<li id="ti1" data-freq="-10"></li>
+				<li id="do" data-freq="-9"></li>
+				<li id="di" data-freq="-8"></li>
+				<li id="re" data-freq="-7"></li>
+				<li id="me" data-freq="-6"></li>
+				<li id="mi" data-freq="-5"></li>
+				<li id="fa" data-freq="-4"></li>
+				<li id="fi" data-freq="-3"></li>
+				<li id="sol" data-freq="-2"></li>
+				<li id="le" data-freq="-1"></li>
+				<li id="la" data-freq="0"></li>
+				<li id="te" data-freq="1"></li>
+				<li id="ti" data-freq="2"></li>
+				<li id="do2" data-freq="3"></li>
+			</ul>
+		</div>
+		<button id="playpause" class="paused">
+			<div id="playIcon"></div>
+		</button>
+	</main>
+</body>
+</html>
